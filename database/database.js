@@ -1,5 +1,5 @@
 const { createClient } = require('@supabase/supabase-js');
-require('dotenv').config({ path: '/Users/tallesnicacio/Desktop/Exportify NodeJS/.env' });
+require('dotenv').config({ path: '/path/to/.env' });
 const supabaseUrl = process.env.supabaseUrl;
 const supabaseKey = process.env.supabaseKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
