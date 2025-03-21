@@ -10,13 +10,13 @@ const Sentry = require('@sentry/node');
 //Sentry.init({ dsn: 'YOUR_SENTRY_DSN' });
 
 const API_ENDPOINT = 'https://app.pipefy.com/graphql';
-const TOKEN = 'eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJQaXBlZnkiLCJpYXQiOjE2OTc0NjczMDIsImp0aSI6ImM2YmM3MDEzLTM5YWYtNDY1Ni1hODM5LTU0YzI4ZGEzOTAwZiIsInN1YiI6MzAyMTIwNTMxLCJ1c2VyIjp7ImlkIjozMDIxMjA1MzEsImVtYWlsIjoidHJpYmUuZ21AdGVncnVzLnRlYW0iLCJhcHBsaWNhdGlvbiI6MzAwMjg0MDk0LCJzY29wZXMiOltdfSwiaW50ZXJmYWNlX3V1aWQiOm51bGx9.MydgEKIWMeLo085IEMRHmPeHhRHUQ_1uF_tWk8q1hTTjP9FVz32_StTYOU8Kk8nWTKMhCa7Ssz7CxDf-AvcLVw';
+const TOKEN = 'YOUR_TOKEN_HERE';
 
 // Função para exportar relatório do Pipefy
 async function exportPipeReport() {
     const mutation = `
         mutation {
-            exportPipeReport(input: {pipeId: 302274681, pipeReportId: 300547495}) {
+            exportPipeReport(input: {pipeId: YOUR_PIPE_ID, pipeReportId: YOUR_PIPE_REPORT_ID}) {
                 pipeReportExport {
                     id
                 }
