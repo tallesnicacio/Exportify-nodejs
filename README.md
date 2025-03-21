@@ -112,6 +112,3 @@ main(
 ## 👨‍💻 Autor
 
 **Talles Nicacio**  
-📍 Vitória - ES  
-📧 talles.nicacio@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/tallesnicacio)
